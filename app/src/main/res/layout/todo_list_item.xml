@@ -4,6 +4,7 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/list_item_shape_r6"
     android:gravity="center_vertical"
     android:padding="20dp">
 
