@@ -10,9 +10,77 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:background="@drawable/list_item_shape_r6">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="닉네임"
+            android:textColor="@color/warmGray_800"
+            android:textSize="16sp"/>
 
+        <TextView
+            android:id="@+id/nickTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/warmGray_800"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="전화번호"
+            android:textColor="@color/warmGray_800"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/phoneTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/warmGray_800"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="거주지"
+            android:textColor="@color/warmGray_800"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/homeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/warmGray_800"
+            android:textSize="20sp"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/changeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/red"
+            android:text="변경하기"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
