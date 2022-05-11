@@ -54,5 +54,9 @@ class TodoFragment: Fragment() {
         todoListView.setOnItemClickListener { adapterView, view, i, l ->
             Toast.makeText(requireContext(), "${i}번째 리스트입니다.", Toast.LENGTH_SHORT).show()
         }
+
+        todoListView.setOnItemLongClickListener { adapterView, view, i, l ->
+            return@setOnItemLongClickListener true
+        }
     }
 }
