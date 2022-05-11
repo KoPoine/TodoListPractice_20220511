@@ -31,16 +31,22 @@ class TodoFragment: Fragment() {
         setValues()
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        if (todoList.isEmpty() ) {
+            todoList.add( TodoData(4.5, "오늘 수업 수강하기", "neppPlus 학원", false) )
+            todoList.add( TodoData(4.0, "오늘 수업 복습하기", "집", false) )
+            todoList.add( TodoData(3.5, "오늘 수업 출석하기", "neppPlus 학원", true) )
+            todoList.add( TodoData(3.0, "오늘 수업 수강하기", "neppPlus 학원", false) )
+            todoList.add( TodoData(2.5, "오늘 수업 수강하기", "neppPlus 학원", false) )
+        }
+    }
+
     fun setupEvents() {
 
     }
 
     fun setValues() {
-        todoList.add( TodoData(4.5, "오늘 수업 수강하기", "neppPlus 학원", false) )
-        todoList.add( TodoData(4.0, "오늘 수업 복습하기", "집", false) )
-        todoList.add( TodoData(3.5, "오늘 수업 출석하기", "neppPlus 학원", true) )
-        todoList.add( TodoData(3.0, "오늘 수업 수강하기", "neppPlus 학원", false) )
-        todoList.add( TodoData(2.5, "오늘 수업 수강하기", "neppPlus 학원", false) )
 
         mTodoAdapter = TodoListAdapter(requireContext(), R.layout.todo_list_item, todoList)
         todoListView.adapter = mTodoAdapter
