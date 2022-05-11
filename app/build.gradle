@@ -44,4 +44,7 @@ dependencies {
 
 //    Lottie
     implementation 'com.airbnb.android:lottie:5.0.3'
+
+//    SimpleRatingBar
+    implementation 'com.github.ome450901:SimpleRatingBar:1.5.1'
 }
